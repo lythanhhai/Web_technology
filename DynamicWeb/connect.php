@@ -31,15 +31,29 @@
         // echo '<caption>Du lieu truy xuat</caption>';
         // echo '<>'
 
+        // kết nối với cơ sở dữ liệu
         $link = mysqli_connect("localhost","root","") or die ("khong the ket noi");
+        // chọn loại kết nối
         mysqli_select_db($link,"dulieu");
         $sql ="select * from table1";
+        // lấy kết quả từ query
         $result= mysqli_query($link, $sql);
         echo ' <table border ="1" width="100%">';
         echo '<caption> du lieu truy cap </caption>';
-        echo '<TR><TH>MA SO</TH><TH>HO TEN</TH><TH>NAM SINH</TH><TH>NGHE NGHIEP</TH></TR>';
-        while ($row= mysqli_fetch_array($result)) {
-        echo "<TR><TD>$row[Maso]</TD><TD>$row[Hoten]</TD><TD>$row[Ngaysinh]</TD><TD>$row[nghenghiep]</TD></TR>";
+        echo '<TR>
+                    <TH>MA SO</TH>
+                    <TH>HO TEN</TH>
+                    <TH>NAM SINH</TH>
+                    <TH>NGHE NGHIEP</TH>
+              </TR>';
+        while ($row= mysqli_fetch_array($result))
+        {
+        echo "<TR>
+                    <TD>$row[Maso]</TD>
+                    <TD>$row[Hoten]</TD>
+                    <TD>$row[Ngaysinh]</TD>
+                    <TD>$row[nghenghiep]</TD>
+              </TR>";
         }
         echo '</table>';
         mysqli_free_result($result);
