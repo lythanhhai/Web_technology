@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form4</title>
+</head>
+<body>
+        <form name="form4" >
+            <div>
+                <input type="text" name="color" value="" onBlur="change()"/> 
+            </div>
+            <br>
+            <input type="button" name="ok" value="ok" onclick="doimau()" />
+            <input type="reset" name="reset" value="reset" onClick="reset1()"/>
+        </form>
+        <script language="javascript">
+            function doimau()
+            {
+                var color = document.form4.color.value;
+                document.bgColor=color;
+            }
+            function reset1()
+            {
+                document.bgColor= "transparent";
+            }
+            function change()
+            {
+                var blur = document.form4.color.value;
+                document.form4.color.value = blur.toUpperCase();
+            }
+        </script>
+</body>
+</html>

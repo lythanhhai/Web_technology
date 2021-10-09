@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form44</title>
+</head>
+<body onload="document.form1.text1.focus()">
+        <form name="form44" action="" method="">
+            <select name="select1">
+                <option value="">index 0</option>
+                <option value="">index 1</option>
+                <option value="">index 2</option>
+                <option value="">index 3</option>
+            </select>
+            <input type="text" name="text1">
+            <input type="button" name="button1" value="ok" onClick="ChiMuc()">
+        </form>
+        <script language="Javascript">
+            function ChiMuc()
+            {
+                var index = document.form44.text1.value;
+                document.form44.select1.selectedIndex = index;
+            }
+        </script>
+</body>
+</html>

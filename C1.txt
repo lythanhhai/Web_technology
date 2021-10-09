@@ -1,0 +1,22 @@
+- Điều kiện để các máy tính kết nối và trao đổi dữ liệu :
++ Môi trường truyền:
+. Định hướng (dây dẫn): dây song hành, cáp xoắn đôi, cáp đồng trục, cáp quang,...
+. Không định hướng: viba mặt đất, viba vệ tinh, sóng radio, hệ thống vô tuyến tế bào
++ Các giao thức (qui định, qui tắc truyền thông)
+- Phân loại mạng mt:
+Căn cứ phạm vi địa lí: LAN, MAN, WAN, GAN,...INTERNET
+Căn cứ vào kĩ thuật chuyển mạch: mạng chuyển mạch kênh (điện), mạng chuyển mạch thông báo, mạng chuyển mạch gói
+Căn cứ vào hệ điều hành mạng: Win, Unix, Linux,...
+Căn cứ vào kiến trúc mạng:
+Đồ hình mạng (topology): mạng hình sao, mạng tuyến tính bus, mạng dạng vòng token ring,..
+Giao thức (protocol): mạng TCP/IP, NetBios,...
+
+- Phân biệt : ISP, IAP
+Bộ giao thức TCP/IP: TCP, UDP (tầng 4); IP, ICMP (tầng 3);  ARP, RARP (tầng 2),..
+
+
+Mô hình Client/Server theo WWW:
+Mô hình 1: Mô hình trình bày từ xa
+Mô hình 2: Mô hình xử lí phân tán (phân tán chức năng xử lí nhưng dữ liệu tập trung
+Mô hình 3: Mô hình quản lí dữ liệu từ xa
+Mô hình 4: Mô hình quản lí dữ liệu phân tán

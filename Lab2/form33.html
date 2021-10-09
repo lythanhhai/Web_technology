@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form33</title>
+</head>
+<body onload="document.form33.text1.focus()">
+        <form name="form33" action="" method="">
+            <input type="text" name="text1" onBlur="ChuyenDoi()">
+            <input type="text" name="text2" >
+        </form>
+
+        <script language="">
+                function ChuyenDoi()
+                {
+                    var str = document.form33.text1.value;
+                    var res = "";
+                    for(var i = 0 ; i < str.length ; i++)
+                    {
+                        if(str.charCodeAt(i) <= 122 && str.charCodeAt(i) >= 97)
+                        {
+                            res += String.fromCharCode(str.charCodeAt(i) - 32);
+                        }
+                        else 
+                        {
+                            res += String.fromCharCode(str.charCodeAt(i) + 32);
+                        }
+                    }  
+                    document.form33.text2.value = res; 
+                }
+
+        </script>
+</body>
+</html>

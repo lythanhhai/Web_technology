@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form11</title>
+</head>
+<body>
+        <form name="form11">
+            <h1>
+                Đăng nhập
+            </h1>
+            <div>
+                <label for="username" >
+                    Username
+                </label>
+                <input type="text" name="username"/> 
+            </div>
+            <br>
+            <div>
+                <label for="password" >
+                    Password
+                </label>
+                <input type="password" name="password"/> 
+            </div>
+            <br>
+            <input type="button" name="ok" value="ok" onClick="checkValidate()"/>
+            <input type="reset" name="reset" value="reset"/>
+        </form>
+        <script language="javascript">
+                function checkValidate()
+                {
+                    if(document.form11.username.value == "" || document.form11.password.value == "")
+                    {
+                        alert("ban chua nhap day du thong tin");
+                    }
+                    else 
+                    {
+                        alert("dang nhap thanh cong");
+                    }
+                }
+        </script>
+</body>
+</html>
