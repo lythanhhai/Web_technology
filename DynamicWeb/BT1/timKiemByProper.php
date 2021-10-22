@@ -8,8 +8,7 @@
 </head>
 <body>
     <?php 
-        $maNV = $_REQUEST['txtId'];
-        $nameNV = $_REQUEST['txtName'];
+        $luachon = $_REQUEST['chon'];
         if($maNV == "" || $nameNV == "") { header("Location:timkiemNV.php");}
         else 
         {

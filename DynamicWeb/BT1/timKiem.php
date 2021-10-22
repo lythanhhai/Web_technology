@@ -8,23 +8,30 @@
 </head>
 <body>
 
-            <form name="form1" action="./xuLyTimKiem.php" method="post">
+            <form name="form1" action="./timKiemByProper.php" method="post">
                 <h1>
                     Tìm kiếm
                 </h1>
                 <div>
                     <label for="username" >
-                        ID
+                        chọn thuộc tính muốn tìm
                     </label>
-                    <input type="text" name="txtId"/> 
+                    <select name="chon">
+                        <option>
+                            IDNV
+                        </option>
+                        <option>
+                            Hoten
+                        </option>
+                        <option>
+                            IDPB
+                        </option>
+                        <option>
+                            Diachi
+                        </option>
+                    </select>
                 </div>
                 <br>
-                <div>
-                    <label for="password" >
-                        Tên
-                    </label>
-                    <input type="text" name="txtName"/> 
-                </div>
                 <br>
                 <input type="submit" value="timkiem" />
                 <input type="reset" name="reset" value="reset"/>
