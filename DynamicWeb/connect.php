@@ -32,7 +32,7 @@
         // echo '<>'
 
         // kết nối với cơ sở dữ liệu
-        $link = mysqli_connect("localhost","root","") or die ("khong the ket noi");
+        $link = mysqli_connect("localhost:3307","root","") or die ("khong the ket noi");
         // chọn loại kết nối
         mysqli_select_db($link,"dulieu");
         $sql ="select * from table1";

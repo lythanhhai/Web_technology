@@ -8,6 +8,12 @@
 </head>
 <body>
     <?php
+        $check='1';
+    
+        if($check){ echo 'true'; } else{echo 'false';}
+
+        echo "<br>";
+
         echo "Hello you";
         echo "<br>";
         $n = 1000;
