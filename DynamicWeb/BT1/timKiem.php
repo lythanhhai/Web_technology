@@ -32,6 +32,11 @@
                     </select>
                 </div>
                 <br>
+                <label for="noidung">
+                        Nội dung tìm
+                    </label>
+                    <input name="noidung"type="text"/>
+                <br>
                 <br>
                 <input type="submit" value="timkiem" />
                 <input type="reset" name="reset" value="reset"/>

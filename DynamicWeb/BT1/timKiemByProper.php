@@ -9,18 +9,20 @@
 <body>
     <?php 
         $luachon = $_REQUEST['chon'];
-        if($maNV == "" || $nameNV == "") { header("Location:timkiemNV.php");}
+        $noidung = $_REQUEST['noidung'];
+        //echo $luachon;
+        if($noidung == "") { header("Location:timkiem.php");}
         else 
         {
             // kết nối với cơ sở dữ liệu
             $link = mysqli_connect("localhost:3307","root","") or die ("khong the ket noi");
             // chọn loại kết nối
             mysqli_select_db($link,"dulieu1");
-            $sql ="select * from nhanvien where IDNV='$maNV' and Hoten='$nameNV'";
+            $sql ="select * from nhanvien where $luachon='$noidung'";
             
             // lấy kết quả từ query
             $result= mysqli_query($link, $sql);
-            if(mysqli_num_rows($result) == 0) { header("Location:timkiemNV.php");}
+            if(mysqli_num_rows($result) == 0) { header("Location:timkiem.php");}
             else 
             {
                 echo ' <table border ="1" width="100%">';
