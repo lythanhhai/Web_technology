@@ -7,24 +7,26 @@
     <title>Document</title>
 </head>
 <body>
-        <?php 
-            echo '
-                <form name="form1" action="" method="post">
-                    <label for="IDNV">mã nhân viên</label>
-                    <input name="IDNV" type="text"/>
-                    <br>
-                    <label for="Hoten">Họ tên</label>
-                    <input name="Hoten" type="text"/>
-                    <br>
-                    <label for="IDPB">mã phòng ban</label>
-                    <input name="IDPB" type="text"/>
-                    <br>
-                    <label for="Diachi">Dia chi</label>
-                    <input name="Diachi" type="text"/>
-                    <br>
-                </form>
-            ';
-        
-        ?>
+            <form name="form1" action="./xuLyChen.php" method="post">
+                <label for="IDNV">mã nhân viên</label>
+                <input name="IDNV" type="text"/>
+                <br>
+                <br>
+                <label for="Hoten">Họ tên</label>
+                <input name="Hoten" type="text"/>
+                <br>
+                <br>
+                <label for="IDPB">mã phòng ban</label>
+                <input name="IDPB" type="text"/>
+                <br>
+                <br>
+                <label for="Diachi">Dia chi</label>
+                <input name="Diachi" type="text"/>
+                <br>
+                <br>
+                <input type="submit" name="ok" value="ok"/>
+                <input type="reset" name="reset" value="reset"/>
+            </form>
 </body>
+
 </html>

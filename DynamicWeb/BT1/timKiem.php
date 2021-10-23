@@ -7,7 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-
             <form name="form1" action="./timKiemByProper.php" method="post">
                 <h1>
                     Tìm kiếm

@@ -26,7 +26,7 @@
         // lấy kết quả từ query
         $resultPB= mysqli_query($link, $sqlPB);
         $resultNV= mysqli_query($link, $sqlNV);
-        echo $IDPB;
+        //echo $IDPB;
         echo ' <table border ="1" width="100%">';
         echo '<caption> Danh sách nhân viên </caption>';
         echo '<TR>
