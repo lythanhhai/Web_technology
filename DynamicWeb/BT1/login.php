@@ -7,7 +7,8 @@
     <title>form1</title>
 </head>
 <body>
-    <?php echo'
+    <?php 
+        echo'
         <form name="form1" action="./xuLyLogin.php" method="post">
             <h1>
                 Đăng nhập
@@ -27,8 +28,13 @@
             </div>
             <br>
             <input type="submit" name="ok" value="ok"/>
+            <input type="submit" name="guest" value="guest" onClick="guest()"/>
             <input type="reset" name="reset" value="reset"/>
         </form>
         ' ?>
+
+    
 </body>
+        
 </html>
+
