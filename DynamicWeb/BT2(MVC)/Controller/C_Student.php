@@ -3,6 +3,7 @@
     class C_student {
         public function invoke()
         {
+            // chèn
             if(isset($_GET['mod1']))
             {
                 include_once('../View/V_formInsert.php');
@@ -34,6 +35,61 @@
 
                 }
             }
+            // update
+            else if(isset($_GET['mod2']))
+            {
+                $model_Student = new Model_student();
+                $studentList = $model_Student->getAllStudent();
+                include_once('../View/V_updateAllStudent.php');
+            }
+            else if(isset($_GET['update']))
+            {
+                $name = $_REQUEST['name'];
+                $age = $_REQUEST['age'];
+                $university = $_REQUEST['university'];
+                $model_Student = new Model_student();
+                $model_Student->updateStudent($_GET['update'], $name, $age, $university);
+                $studentList = $model_Student->getAllStudent();
+                include_once("../View/V_allStudent.php");
+            }
+            else if(isset($_GET['ID1']))
+            {
+                $ID1 = $_GET['ID1'];
+                //include_once("../View/V_test.php");
+                include_once('../View/V_formUpdate.php');
+            }
+
+            // xóa
+            else if(isset($_GET['mod3']))
+            {
+                $model_Student = new Model_student();
+                $studentList = $model_Student->getAllStudent();
+                include_once('../View/V_removeStudent.php');
+            }
+            else if(isset($_GET['removeID']))
+            {
+                $removeID = $_GET['removeID'];
+                $model_Student = new Model_student();
+                $model_Student->removeStudent($removeID);
+                $studentList = $model_Student->getALlStudent();
+                include_once('../View/V_updateAllStudent.php');
+            }
+            // tìm kiếm
+            else if(isset($_GET['mod4']))
+            {
+                include_once('../View/V_formSearchStudent.php');
+            }
+            else if(isset($_GET['search']))
+            {
+                $chon = $_REQUEST['chon'];
+                $noidung = $_REQUEST['noidung'];
+                //include_once('../View/V_test.php');
+                $model_Student = new Model_student();
+                $studentList1 = $model_Student->searchStudent($chon, $noidung);
+                include_once('../View/V_resSearch.php');
+            }
+            
+            
             else 
             {
                 if(isset($_GET['stid']))
