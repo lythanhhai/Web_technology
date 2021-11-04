@@ -8,9 +8,10 @@
 </head>
 <body>
     <?php 
-        echo $chon;
-        echo "<br>";
-        echo $noidung;
+        for($i = 1 ; $i <= sizeof($studentList1) ; $i++)
+        {
+            echo $studentList1[$i]->Name;
+        }
     ?>
 </body>
 </html>

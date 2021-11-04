@@ -83,9 +83,9 @@
             {
                 $chon = $_REQUEST['chon'];
                 $noidung = $_REQUEST['noidung'];
-                //include_once('../View/V_test.php');
                 $model_Student = new Model_student();
                 $studentList1 = $model_Student->searchStudent($chon, $noidung);
+                //include_once('../View/V_test.php');
                 include_once('../View/V_resSearch.php');
             }
             
